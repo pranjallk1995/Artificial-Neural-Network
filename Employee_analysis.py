@@ -12,7 +12,7 @@ Y = dataset.iloc[:, 13]
 
 #encoding categorical data.
 X = pd.get_dummies(X, columns = ['Geography'], prefix = ['Country'])            # This method is called One-Hot encoding.
-X = X.iloc[:, :-1]              #avoiding dummy veriable trap.
+X = X.iloc[:, :-1]              #avoiding dummy variable trap.
 
 #enooding binary data.
 from sklearn.preprocessing import LabelEncoder
