@@ -41,7 +41,7 @@ from keras.layers import Dense
 classifier = Sequential()
 
 #adding the input layer and the first hidden layer.
-classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu', input_dim = No_of_features))        # 6 = (1+11)/ 2
+classifier.add(Dense(output_dim = 8, init = 'uniform', activation = 'relu', input_dim = No_of_features))        # 6 = (1+11)/ 2
 
 #adding the second hidden layer.
 classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu'))
