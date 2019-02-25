@@ -3,5 +3,5 @@
 Employee_analysis.py:
 A basic implementation to learn the tendency of an employee to leave the organisation.
 
-Self_made_logistic_regression:
+Self_made_logistic_regression.py:
 Single Neuron implementation of logistic regression.
