@@ -67,7 +67,7 @@ for iters in range(iterations):
     A = 1/(1 + np.exp(-P))
     
     #calculating error.
-    E = -(np.dot(Y.T, np.log(A)) + np.dot((1 - Y).T, (1 - A)))
+    E = -(1/m)*(np.dot(Y.T, np.log(A)) + np.dot((1 - Y).T, np.log(1 - A)))
     
     #storing intermediate error values to make graph.
     error_values[0][iters] = E
