@@ -65,7 +65,7 @@ class NeuralNetwork:
         return self.layer4
     
     def error(self):
-        return -(1 / self.output.shape[0]) * (np.dot(self.y.T, np.log(self.output)) + np.dot((1 - self.y).T, np.log(1 - self.output)))
+        return -(1 / self.output.shape[0]) * ((self.y * np.log(self.output)) + ((1 - self.y) * np.log(1 - self.output)))
     
     def backprop(self):
         
